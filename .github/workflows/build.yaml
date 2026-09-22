@@ -38,9 +38,9 @@ jobs:
           echo "RELEASE_TIME=$(date -u +%H:%M)" >> ${GITHUB_ENV}
 
       - name: Upload artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
-          name: pycdc
+          name: pycdc-windows
           path: |
             pycdc/pycdc.exe
             pycdc/pycdas.exe
